@@ -255,8 +255,7 @@ a.logo {
 }
 
 /* The name sits on a solid black box with white text in Times New Roman
-   (a system font, nothing is downloaded). Over the home page photo the box
-   is 75 % black, so the photo shows through a little. */
+   (a system font, nothing is downloaded), on every page. */
 a.logo,
 a.logo:hover,
 a.logo:active,
@@ -271,13 +270,6 @@ a.logo:visited:hover {
     border: none;
 }
 
-.index-logo a.logo,
-.index-logo a.logo:hover,
-.index-logo a.logo:active,
-.index-logo a.logo:visited,
-.index-logo a.logo:visited:hover {
-    background-color: rgba(0, 0, 0, 0.75);
-}
 
 /* Article Title
  */
