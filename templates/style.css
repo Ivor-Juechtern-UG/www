@@ -254,37 +254,22 @@ a.logo {
     display: inline-block;
 }
 
-a.logo::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -0.3em;
-    right: -0.3em;
-    height: 50%;
-    background: gold;
-    z-index: -1;
-}
-
+/* The name sits on a solid black box with white text in Times New Roman
+   (a system font, nothing is downloaded), on every page. */
 a.logo,
 a.logo:hover,
-a.logo:active {
-  text-decoration: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  border: none;
-  color: black;
+a.logo:active,
+a.logo:visited,
+a.logo:visited:hover {
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.3em 0.6em 0.25em;
+    margin: 0;
+    border: none;
 }
 
-.index-logo a.logo,
-.index-logo span.logo,
-.index-logo div.logo {
-    color: white;
-}
-
-.index-logo a.logo::before {
-    background: gold;
-}
 
 /* Article Title
  */
