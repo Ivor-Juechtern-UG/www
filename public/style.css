@@ -487,3 +487,14 @@ h1.article-title
     hyphens: auto;
     overflow-wrap: anywhere;
 }
+
+/* "Impressum" heading at the top of the footer */
+.footer h2.footer-title,
+.article-page .footer h2.footer-title
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1.25rem 0;
+}
