@@ -6,8 +6,6 @@ image: images/1.jpeg
 explanation: Workers performing maintenance by riding in gondolas under high-voltage lines near the author's home in Darmstadt, Germany.
 ---
 
-<!-- Claude review (whole article): The sections with years in their headings, plus a few others, are new and come from our discussion; your own text is unchanged. These review comments are invisible on the page, but the generator copies them into the page source, so delete them before you rebuild public/. Hero image: images/1.jpeg still contains GPS coordinates in its EXIF data (near your home), so consider stripping them. The generator reads the image size from the EXIF thumbnail (160 x 120) instead of the real photo (2048 x 1536), so the social-card size tags are wrong. The frontmatter field "authors" is empty. -->
-
 # Audience
 
 This article is written for professionals responsible for the purchase and use of energy in industrial contexts.
@@ -30,8 +28,6 @@ The Grid is a major factor in energy and will play an important role in the futu
 
 The Grid is the infrastructure connecting in-front-of-the-meter sources of energy the behind-the-meter consumption. Over short, long and very long distances.
 
-<!-- Claude review: A word is missing: "connecting in-front-of-the-meter sources of energy [to] the behind-the-meter consumption". Also, energy now flows both ways: rooftop solar and batteries are sources behind the meter, and the Grid carries their surplus outwards too. -->
-
 # A Short History of the Grid
 
 The Grid was not designed. It grew, step by step, and each step left something we still live with today.
@@ -45,8 +41,6 @@ A factory had its own steam engine. Shafts and leather belts carried the power t
 ## 1860s: One Generator, One User
 
 ![An Alliance machine, the generator that grew out of Floris Nollet’s design. In the 1860s such machines lit lighthouses: one generator, one arc lamp, alternating current.](images/the-grid-2.jpg)
-
-<!-- Claude: add the source and licence of the Alliance machine photo to the caption above. -->
 
 Floris Nollet, a Belgian professor, designed a steam-driven generator in 1849. After his death, the company L'Alliance developed it further.
 
@@ -72,8 +66,6 @@ Direct current has no frequency. Frequency: no problem.
 
 ## Power and Energy: kW and kWh
 
-<!-- Claude placeholder, priority for industrial readers: power (kW) is the rate, energy (kWh) the amount; early metering; why peak power, not only energy, drives an industrial bill. To discuss. -->
-
 ## 1891: Alternating Current Brings Frequency
 
 Alternating current won the "war of the currents". With transformers, the voltage could be raised for long distances and lowered again for the user.
@@ -87,8 +79,6 @@ Every town chose its own. Europe used everything from 25 Hz to 60 Hz before slow
 Still no problem. Each station fed its own lamps at its own frequency, and lamps barely notice.
 
 ## AC vs DC: Why the Transformer Won
-
-<!-- Claude placeholder: from the voice talk (discussion.md, section 13): a dynamo is AC inside, with a commutator; in DC, voltage is the signal; Edison's low voltage limited his reach; a transformer needs a changing current. To discuss. -->
 
 ## 1890s: Frequency Becomes a Problem
 
@@ -146,11 +136,7 @@ This is why grids keep spare capacity running, called spinning reserve.
 
 ## Protection: Breakers and Arcs
 
-<!-- Claude placeholder: fault current, selective tripping, arcs and the AC zero crossing; oil, vacuum and SF6 breakers (discussion.md, section 13). To discuss. -->
-
 ## Black Start: Restarting a Dead Grid
-
-<!-- Claude placeholder: which plants can start without the Grid, how islands are rebuilt and synchronised; Iberia 2025 as an example. To discuss. -->
 
 ## 1920s: Somebody Takes Care of the Cable
 
@@ -178,15 +164,9 @@ And large areas can swing against each other. More on that below.
 
 ## Voltage Levels: From 380 kV to Your Socket
 
-<!-- Claude placeholder, priority for industrial readers: transmission, high, medium and low voltage; which level an industrial site connects to, and why it matters for fees and capacity. To discuss. -->
-
 ## Voltage and Reactive Power
 
-<!-- Claude placeholder, priority for industrial readers: frequency is global, voltage is local; reactive power; cos φ and reactive power charges; link to the Iberian blackout. To discuss. -->
-
 ## Grid Strength: Short-Circuit Power
-
-<!-- Claude placeholder: strong vs weak grid; why short-circuit power matters for large machines and for inverters. To discuss. -->
 
 ## 1990s: Turbine and Cable Become Separate Companies
 
@@ -198,8 +178,6 @@ This legal separation is where the meter gets its meaning.
 
 ## Who's Who: TSO, DSO, Supplier, Balance Responsible Party
 
-<!-- Claude placeholder: who does what after unbundling: transmission and distribution system operators, supplier, balance responsible party, metering operator, regulator. To discuss. -->
-
 # Behind-the-Meter (BTM) and In-Front-of-the-Meter (FTM)
 
 The Grid both ends and does not end at your Grid Power Meter.
@@ -207,8 +185,6 @@ The Grid both ends and does not end at your Grid Power Meter.
 The Grid Power Meter demarcates two legal, but not electrical spaces: in-front-of-the-meter (FTM) and behind-the-meter (BTM)
 
 From an electrical point of view in-front-of-the-meter (FTM) and behind-the-meter (BTM) is the same space.
-
-<!-- Claude review: Strong point, keep it. You could add that the legal line has consequences: in front of the meter the grid operator is responsible, behind it you are. And since 2024 (§14a EnWG) the grid operator can reach behind the meter and dim controllable devices such as heat pumps, wallboxes and batteries. -->
 
 # Flow of Electricity vs Flow of Water
 
@@ -222,15 +198,11 @@ The most significant difference, is that water flow is controlled at the valve, 
 
 This means, that when the sun is shining and your solar panels produce more electricity, than you consume, and you should not deliver to the Grid; what you do is reduce the production. There is no valve between your solar production and the grid you can close.
 
-<!-- Claude review: "There is no valve" overstates it a little. Breakers can open the circuit, and an inverter can limit its output to zero export, which works like a valve at the source. What really differs from water: electricity cannot be stored in the pipe, it flows along all paths at once according to physics, and you cannot route it. That supports your point that control happens at the source. -->
-
 # Challenges Facing the Grid
 
 When talking about the challenges facing the Grid, the common sense is an amalgamation of the two core challenges: "throughput" and "balance/imbalance". These are commonly amalgamated into "what the grid can do". And into "make the grid able to do more".
 
 To properly understand and act upon the future of grid one should learn the difference.
-
-<!-- Claude review: The strongest idea in the article. Consider a third challenge next to throughput and balance: stability. Balance is about energy over minutes and hours; stability is about the first seconds (inertia, voltage, oscillations). The Iberian blackout of 2025 was a stability failure, not a lack of energy. See the new sections further down. -->
 
 ## Throughput
 
@@ -246,15 +218,9 @@ Supply and demand balance (balancing generation with consumption)
 
 Upgrading throughput—e.g., adding high-voltage lines or smart grid tech—lets you move more power,  but it doesn’t by itself ensure that generation matches consumption at every moment. You still need mechanisms like storage, demand response, or flexible generation to handle the supply–demand problem.
 
-<!-- Claude review: The first sentence of this paragraph repeats the Throughput paragraph word for word. -->
-
 ## Congestion: Redispatch, Curtailment, Bidding Zones
 
-<!-- Claude placeholder: when the wires are full: redispatch, curtailment, Germany's north-south problem, the bidding-zone debate. To discuss. -->
-
 ## Grid Connection: The New Scarce Resource
-
-<!-- Claude placeholder, priority for industrial readers: connection queues, congestion, flexible connection agreements. To discuss. -->
 
 ## Grid and Nature
 
@@ -268,39 +234,25 @@ Conclusion:
 
 Less Grid is better for the nature.
 
-<!-- Claude review: This section is in German while the article is in English, and the sentence about wind turbines appears twice. Only the power-line figure has a source (NABU); the others need one too. The conclusion "Less Grid is better for the nature" does not follow from the numbers: they compare power lines with glass, traffic and cats, not more grid with less grid. It also sits under "Challenges Facing the Grid" as a subsection. -->
-
 ## Underground Cables and Acceptance
-
-<!-- Claude placeholder: land use, public acceptance, underground DC cables. To discuss. -->
 
 # Grid and Energy Productoin
 
 In an AC grid, generation must match consumption in real time. Any imbalance causes the grid frequency to deviate from its nominal value (50 Hz or 60 Hz). The system uses that frequency deviation as a feedback signal: if demand rises, frequency drops; generators automatically increase output (primary control), and additional reserves are dispatched (secondary/tertiary control) to restore balance.
 
-<!-- Claude review: Typo in the heading ("Productoin"). The paragraph is correct. In Europe the three control levels are called FCR (primary, fully active within 30 seconds), aFRR (secondary, within 5 minutes) and mFRR (tertiary, within 12.5 to 15 minutes). Before all three comes inertia, which acts in the first seconds without any control. -->
-
 ## Control Reserves: FCR, aFRR, mFRR
-
-<!-- Claude placeholder: what acts when, from seconds to 15 minutes; who provides it; how a site can earn from it. To discuss. -->
 
 ## Tolerable variations
 
 Frequency: Most grids allow ±0.5 Hz (sometimes ±1 Hz) for brief periods; sustained deviations outside ±0.1–0.2 Hz trigger protective actions.
 
-<!-- Claude review: These numbers are too loose for Continental Europe. Normal operation stays within 0.05 Hz of 50 Hz. Reserves (FCR) are fully active at a deviation of 0.2 Hz, which is control, not protection. The maximum allowed instantaneous deviation is 0.8 Hz. Automatic load shedding starts at 49.0 Hz, and power plants may disconnect below 47.5 Hz or above 51.5 Hz. So a swing of 0.5 Hz is already a serious event. -->
-
 Voltage: ±5 % is typical; beyond ±10 % risks equipment damage.
-
-<!-- Claude review: For low voltage, EN 50160 allows 230 V plus or minus 10 % (for 95 % of the 10-minute averages in a week), so 10 % is the normal limit rather than the damage zone. -->
 
 Time: Imbalances of seconds to minutes are managed by inertia and reserves; longer mismatches require curtailment, load shedding, or blackouts.
 
 So the match must be precise in the long run, but the grid can tolerate small, short-lived deviations while control systems act to restore equilibrium.
 
 ## Power Quality: Harmonics, Dips, Flicker
-
-<!-- Claude placeholder, priority for industrial readers: what stops production lines: voltage dips, harmonics from inverters and drives, flicker; who is responsible for what. To discuss. -->
 
 # The Grid Today: Fewer Rotors, More Inverters
 
@@ -313,8 +265,6 @@ Nothing behind an inverter spins in sync with the Grid, so inverters bring no na
 Inverters are controlled by software, and they are fast. They can react within milliseconds. The flow of electricity is controlled at the source, and the source is now software.
 
 ## DC Comes Back: HVDC and DC Microgrids
-
-<!-- Claude placeholder: HVDC links and undersea cables; DC inside sites; fewer conversions, but harder to switch off (discussion.md, section 13). To discuss. -->
 
 ## 2006: One Line, Fifteen Million Households
 
@@ -369,8 +319,6 @@ Partly, regulation follows only once something becomes big enough to cause troub
 It is not, once the inverter sits behind an EMS together with batteries and industrial equipment. A certified inverter only guarantees its own behaviour within its own limits. It cannot stop the EMS above it from commanding sudden swings, or many sites from doing the same thing at once. The behaviour that matters for the Grid emerges from the whole system, and nobody certifies that today.
 
 ## The Digital Grid: Smart Meters and Cyber Security
-
-<!-- Claude placeholder: smart meter gateway, remote access to inverters and EMS by their makers, NIS2. To discuss. -->
 
 ## 2025: The Iberian Blackout
 
@@ -428,31 +376,19 @@ But low inertia, little visibility of millions of small systems, and badly behav
 
 ## Load Growth: Heat Pumps, EVs, Data Centres
 
-<!-- Claude placeholder: electrification makes the load grow and change shape. To discuss. -->
-
 # Cheat Sheets
 
 ## Time Scales: From Milliseconds to Years
 
-<!-- Claude placeholder: one ladder for the whole article: inverter control (milliseconds), inertia (seconds), reserves (seconds to minutes), markets (15 minutes to a day ahead), grid build-out (years). To discuss. -->
-
 ## Orders of Magnitude: From Watts to Gigawatts
-
-<!-- Claude placeholder: a phone charger, a household, a factory, a power plant, a country. To discuss. -->
 
 # Cost of Electricity vs Cost of Transport
 
 ## How Electricity is Priced: Day-Ahead, Intraday, Merit Order
 
-<!-- Claude placeholder, priority for industrial readers: exchanges, merit order, negative prices, and what they mean for a purchasing strategy. To discuss. -->
-
 ## Balancing Groups and Imbalance Prices
 
-<!-- Claude placeholder: every kWh belongs to a balancing group; what a forecast error costs. To discuss. -->
-
 ## How Grid Fees Work
-
-<!-- Claude placeholder, priority for industrial readers: capacity and energy charges, peak-based fees, special fees for industry; the frame for the country sections below. To discuss. -->
 
 ## Netherlands
 
@@ -465,8 +401,6 @@ There are discussions about variable grid tariffs in the Netherlands
 The Dutch government is addressing grid congestion with various measures
 
 The Dutch government and grid operators (Liander, Enexis, Stedin, TenneT) are implementing other measures including regional tenders for flexible deployment starting in 2026, and procuring flexibility to free up capacity.
-
-<!-- Claude review: "Starting in 2026" is now the present; check what has actually started and update the tense. For the empty Germany section, current topics are the §14a EnWG grid-fee reductions for controllable devices, the ongoing grid-fee reform at the Bundesnetzagentur (AgNes), and the new paid market for inertia since January 2026. -->
 
 ## Belgium
 
@@ -484,14 +418,10 @@ The Dutch government and grid operators (Liander, Enexis, Stedin, TenneT) are im
 
 # Measures You Should Take
 
-<!-- Claude review: Two measures that follow from the new sections: make sure your own EMS behaves well towards the Grid (smooth ramps, no reaction to every small signal, some randomness in timing), and check whether your battery could earn money as grid-forming inertia. -->
-
 ## Study Your Energy Profile
 
 ## Create a Strategy
 
 ## Use Your Flexibility: Peak Shaving, Reserves, Demand Response
-
-<!-- Claude placeholder, priority for industrial readers: what a site with batteries, heat storage or flexible processes can do, and earn. To discuss. -->
 
 ## Restructure, Purchase and Manage
