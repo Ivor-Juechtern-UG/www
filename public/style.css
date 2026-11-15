@@ -254,21 +254,29 @@ a.logo {
     display: inline-block;
 }
 
-/* The name sits on a black box at 75 % opacity, with white text in
-   Times New Roman (a system font, nothing is downloaded), on every page */
+/* The name sits on a solid black box with white text in Times New Roman
+   (a system font, nothing is downloaded). Over the home page photo the box
+   is 75 % black, so the photo shows through a little. */
 a.logo,
 a.logo:hover,
 a.logo:active,
 a.logo:visited,
-a.logo:visited:hover,
-.index-logo a.logo {
+a.logo:visited:hover {
     font-family: "Times New Roman", Times, serif;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #000000;
     color: #ffffff;
     padding: 0.3em 0.6em 0.25em;
     margin: 0;
     border: none;
+}
+
+.index-logo a.logo,
+.index-logo a.logo:hover,
+.index-logo a.logo:active,
+.index-logo a.logo:visited,
+.index-logo a.logo:visited:hover {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* Article Title
