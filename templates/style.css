@@ -84,12 +84,13 @@ body, html
     }
 
     .small-title {
-        font-size: 2,5rem;
         bottom: 24px; /* Adjust this value to control the distance from the bottom */
     }
 
     p.container-title {
         font-size: 2.2rem;
+        hyphens: auto;
+        overflow-wrap: anywhere;
     }
 
     .container-text {
@@ -164,6 +165,7 @@ img.container-image
 
 .footer
 {
+    box-sizing: border-box;
     background-color: #000000;
     padding: 40px 0;
     width: 100%;
@@ -173,8 +175,39 @@ img.container-image
     font-family: "League Spartan", sans-serif;
     font-weight: 100;
     font-size: 1rem;
-    line-height: 25%;
     color: #dddddd;
+}
+
+/* Compact lines that still wrap cleanly on narrow screens
+   (line-height: 25% made wrapped lines overlap on phones) */
+.footer p,
+.article-page .footer p
+{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding-right: 2.5rem;
+}
+
+.footer a,
+.footer a:visited
+{
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.footer a:hover
+{
+    color: #000000;
+}
+
+/* Article pages have side padding on <body>; let the footer span the full width */
+.article-page .footer
+{
+    box-sizing: border-box;
+    width: auto;
+    margin: 4rem -1em 0;
 }
 
 /*
@@ -374,10 +407,54 @@ body.article-page {
 
 .article-page p,
 .article-page ul,
+.article-page ol,
 .article-page li
 {
     font-family: "League Spartan", sans-serif;
     font-size: 1.5rem;
     max-width: 70rem;
     line-height: 2rem;
+}
+
+/* Links inside article text: same size as the text, recognisable, and long
+   URLs wrap instead of overflowing on phones */
+.article-page article p,
+.article-page article li
+{
+    overflow-wrap: anywhere;
+}
+
+.article-page article a
+{
+    font-size: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+}
+/* Phones: one column, no left spacer, image above the text.
+   Kept at the end of the file so it overrides the base rules above. */
+@media (max-width: 768px)
+{
+    .smaller {
+        display: none;
+    }
+
+    .bigger {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .bigger > div {
+        min-width: 0;
+    }
+
+    img.container-image {
+        align-self: center;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 60vh;
+        margin: 0 0 1.5rem;
+    }
 }
