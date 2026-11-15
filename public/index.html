@@ -16,6 +16,32 @@
 
         <link rel="stylesheet" href="style.css">
 
+        <link rel="alternate" hreflang="de" href="https://ivorjuechtern.de/index.html">
+<link rel="alternate" hreflang="en" href="https://ivorjuechtern.de/english/index.html">
+<link rel="alternate" hreflang="x-default" href="https://ivorjuechtern.de/index.html">
+        <script>
+(function () {
+  var targets = {"de":"","en":"english/index.html"};
+  var site = location.protocol + "//" + location.host + "/";
+  if (document.referrer.indexOf(site) === 0) {
+    return;
+  }
+  var wanted = navigator.languages;
+  if (wanted === undefined || wanted.length === 0) {
+    wanted = [navigator.language];
+  }
+  for (var index = 0; index < wanted.length; index += 1) {
+    var code = String(wanted[index]).toLowerCase().split("-")[0];
+    if (Object.prototype.hasOwnProperty.call(targets, code)) {
+      if (targets[code] !== "") {
+        location.replace(targets[code]);
+      }
+      return;
+    }
+  }
+  location.replace("english/index.html");
+})();
+</script>
     </head>
     <body>
   <div class="logo index-logo">
@@ -23,6 +49,7 @@
       <a class="logo" href="index.html" aria-label="Ivor J&uuml;chtern">Ij</a>
     </span>
   </div>
+  <nav class="language-switch"><span aria-current="page">DE</span> | <a href="english/index.html" hreflang="en" lang="en">EN</a></nav>
         <div class="bg-image">
             
             <div class="overlay"></div>
@@ -74,7 +101,7 @@
 
             <div class="bigger">
 
-                <img class="container-image" src="home/industrieautomatisierung/images/phoenix-contact-pls-axc-f-1252.jpg">
+                <img class="container-image" src="media/home/industrieautomatisierung/images/phoenix-contact-pls-axc-f-1252.jpg">
 
                 <!-- Protecting the paragraphs from the flex.
                 -->
@@ -97,11 +124,11 @@
             <div class="bigger">
                 <div class="toc-container">
                     <section>
-<h2>Renewable Energy</h2>
-<p><a href="renewable-energy/heat-as-energy-exchange-mechanism.html">Heat as Energy Exchange Mechanism</a></p>
-<p><a href="renewable-energy/peak-management-in-industrial-contexts.html">Peak Management In Industrial Contexts</a></p>
-<p><a href="renewable-energy/steering-of-inverters-the-meaning-of-yesterday.html">Steering of Inverters. The Meaning of &laquo; Yesterday &raquo;</a></p>
-<p><a href="renewable-energy/the-grid.html">The Grid</a></p>
+<h2>Erneuerbare Energie</h2>
+<p><a href="erneuerbare-energie/waerme-als-mechanismus-des-energieaustauschs.html">Wärme als Mechanismus des Energieaustauschs</a></p>
+<p><a href="erneuerbare-energie/lastspitzenmanagement-in-der-industrie.html">Lastspitzenmanagement in der Industrie</a></p>
+<p><a href="erneuerbare-energie/steuerung-von-wechselrichtern-die-bedeutung-von-gestern.html">Steuerung von Wechselrichtern. Die Bedeutung von &laquo; Gestern &raquo;</a></p>
+<p><a href="erneuerbare-energie/das-netz.html">Das Netz</a></p>
 </section>
 
                 </div>
@@ -147,7 +174,7 @@
     </p>
     <br>
     <p>
-        <a href="legal/datenschutz.html">Datenschutzerklärung</a>
+        <a href="rechtliches/datenschutz.html">Datenschutzerklärung</a>
     </p>
 </footer>
 
