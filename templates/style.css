@@ -478,3 +478,12 @@ body.article-page {
         margin: 0 0 1.5rem;
     }
 }
+
+/* Article titles shrink on narrow screens and break long German words
+   (e.g. "Datenschutzerklärung") instead of running off the screen. */
+h1.article-title
+{
+    font-size: clamp(2.2rem, 10vw, 5rem);
+    hyphens: auto;
+    overflow-wrap: anywhere;
+}
