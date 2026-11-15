@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +22,9 @@
   <meta name="twitter:image:width" content="{{ogImageWidth}}">
   <meta name="twitter:image:height" content="{{ogImageHeight}}">
   
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="{{root}}style.css">
+  <link rel="icon" href="{{root}}images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{{root}}images/favicon.png" type="image/png">
 </head>
 <body class="article-page">
   <div class="logo">
@@ -41,5 +41,6 @@
     <p class="article-explanation">{{explanation}}</p>
     {{content}}
   </article>
+  {{footer}}
 </body>
 </html>

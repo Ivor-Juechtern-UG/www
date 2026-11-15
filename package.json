@@ -1,7 +1,14 @@
 {
   "name": "ivorjuechtern.de",
   "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node generate.js"
+  },
   "dependencies": {
     "generator.js": "git+https://github.com/dahoum/generator.js.git"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
