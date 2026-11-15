@@ -1,5 +1,4 @@
 ---
-category: Renewable Energy
 title: The Grid
 authors: 
 image: images/1.jpeg

@@ -1,7 +1,5 @@
 ---
-category: Legal
 title: Datenschutzerklärung
-lang: de
 toc: false
 ---
 

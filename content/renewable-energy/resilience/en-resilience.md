@@ -1,5 +1,4 @@
 ---
-category: Renewable Energy
 title: Resilience
 draft: true
 ---

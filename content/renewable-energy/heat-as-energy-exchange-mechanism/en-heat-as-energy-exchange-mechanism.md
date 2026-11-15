@@ -1,5 +1,4 @@
 ---
-category: Renewable Energy
 title: Heat as Energy Exchange Mechanism
 authors: 
 image: images/Sand-Battery-2MW-PNE.jpeg
