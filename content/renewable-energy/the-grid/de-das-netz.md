@@ -39,7 +39,7 @@ Eine Fabrik hatte ihre eigene Dampfmaschine. Transmissionswellen und Lederriemen
 
 ## 1860er-Jahre: Ein Generator, ein Verbraucher
 
-![Eine Alliance-Maschine, der Generator, der aus der Konstruktion von Floris Nollet hervorging. In den 1860er-Jahren beleuchteten solche Maschinen Leuchttürme: ein Generator, eine Bogenlampe, Wechselstrom.](images/the-grid-2.jpg)
+![Eine Alliance-Maschine, der Generator, der aus der Konstruktion von Floris Nollet hervorging. In den 1860er-Jahren beleuchteten solche Maschinen Leuchttürme: ein Generator, eine Bogenlampe, Wechselstrom. Bild: Technisches Museum Wien, Wikimedia Commons.](images/the-grid-2.jpg)
 
 Floris Nollet, ein belgischer Professor, konstruierte 1849 einen dampfgetriebenen Generator. Nach seinem Tod entwickelte das Unternehmen L'Alliance ihn weiter.
 
