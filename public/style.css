@@ -483,3 +483,34 @@ h1.article-title
     color: #ffffff;
     margin: 0 0 1.25rem 0;
 }
+
+/* Language switch (DE | EN), top right, in the style of the logo */
+nav.language-switch
+{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 1000;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+    padding: 0.35em 0.6em 0.3em;
+}
+
+nav.language-switch a,
+nav.language-switch a:visited,
+nav.language-switch a:hover
+{
+    color: #ffffff;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+nav.language-switch span[aria-current]
+{
+    font-weight: 700;
+}

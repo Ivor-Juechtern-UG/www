@@ -7,5 +7,8 @@ generateSite({
   templatesDir: path.join(__dirname, 'templates'),
   buildDir: path.join(__dirname, 'public'),
   siteUrl: 'https://ivorjuechtern.de',
-  defaultLang: 'en',
+  languages: [
+    { code: 'de', path: '' },
+    { code: 'en', path: 'english' },
+  ],
 });

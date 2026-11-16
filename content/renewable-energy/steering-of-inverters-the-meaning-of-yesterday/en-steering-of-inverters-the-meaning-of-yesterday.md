@@ -1,5 +1,4 @@
 ---
-category: Renewable Energy
 title: Steering of Inverters. The Meaning of &laquo; Yesterday &raquo;
 authors: 
 image: 

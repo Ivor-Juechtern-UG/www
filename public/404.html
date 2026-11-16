@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404</title>
+<script>
+(function () {
+  var target = "/";
+  if (location.pathname.indexOf("/english/") === 0) {
+    target = "/english/";
+  }
+  location.replace(target);
+})();
+</script>
+</head>
+<body>
+<p>Seite nicht gefunden / Page not found</p>
+<p><a href="/" hreflang="de">Deutsch</a> · <a href="/english/" hreflang="en">English</a></p>
+</body>
+</html>

@@ -1,5 +1,4 @@
 ---
-category: Renewable Energy
 title: Peak Management In Industrial Contexts
 authors: 
 image: images/1.jpeg
