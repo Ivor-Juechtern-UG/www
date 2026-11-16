@@ -39,7 +39,7 @@ A factory had its own steam engine. Shafts and leather belts carried the power t
 
 ## 1860s: One Generator, One User
 
-![An Alliance machine, the generator that grew out of Floris Nollet’s design. In the 1860s such machines lit lighthouses: one generator, one arc lamp, alternating current.](images/the-grid-2.jpg)
+![An Alliance machine, the generator that grew out of Floris Nollet’s design. In the 1860s such machines lit lighthouses: one generator, one arc lamp, alternating current. Image: Technisches Museum Wien, Wikimedia Commons.](images/the-grid-2.jpg)
 
 Floris Nollet, a Belgian professor, designed a steam-driven generator in 1849. After his death, the company L'Alliance developed it further.
 
