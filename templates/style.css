@@ -486,7 +486,8 @@ h1.article-title
 }
 
 /* Language switch: "Deutsch" and "English" as two touching buttons.
-   The current language is white on black, the other black on white.
+   The current language is white on black, the other black on white;
+   neither changes colour when pointed at or pressed.
    Poiret One (thin Art Deco lettering) is served from fonts/,
    SIL Open Font License, see fonts/OFL-Poiret-One.txt. */
 @font-face {
@@ -540,17 +541,17 @@ nav.language-switch span[aria-current]
     color: #ffffff;
 }
 
+/* The buttons keep their colours on hover, while pressed and after a tap
+   (no yellow like other links, no grey tap flash on phones). */
 nav.language-switch a,
-nav.language-switch a:visited
+nav.language-switch a:visited,
+nav.language-switch a:hover,
+nav.language-switch a:active,
+nav.language-switch a:focus
 {
     background-color: #ffffff;
     color: #000000;
-}
-
-nav.language-switch a:hover
-{
-    background-color: gold;
-    color: #000000;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Upright photos inside articles must not fill the whole screen */
