@@ -484,7 +484,7 @@ h1.article-title
     margin: 0 0 1.25rem 0;
 }
 
-/* Language switch: "Deutsch" and "English" as two buttons, 1px apart.
+/* Language switch: "Deutsch" and "English" as two touching buttons.
    The current language is white on black, the other black on white.
    Oxanium (square letters with rounded corners) is served from fonts/,
    SIL Open Font License, see fonts/OFL-Oxanium.txt. */
@@ -513,7 +513,7 @@ nav.language-switch
     right: 1em;
     z-index: 1000;
     display: flex;
-    gap: 1px;
+    gap: 0;
     font-family: "Oxanium", "League Spartan", sans-serif;
     font-weight: 600;
     font-size: 1.05rem;
