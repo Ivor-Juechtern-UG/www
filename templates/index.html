@@ -1,98 +1,35 @@
 <!DOCTYPE html>
 <html lang="{{lang}}">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivor Jüchtern</title>
+    <link rel="icon" href="{{root}}images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="{{root}}images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="{{root}}style.css">
+    {{alternateLinks}}
+    {{languageRedirect}}
+</head>
+<body>
+    <a class="logo" href="index.html" aria-label="Ivor J&uuml;chtern">Ij</a>
+    {{languageSwitch}}
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="bg-image">
+        <div class="bg-title">{{text.heroTitle}}<br><span class="divider"></span><br>{{text.heroSubtitle}}</div>
+        <div class="small-title">{{text.heroSmall}}</div>
+    </div>
 
-        <title>
+    <main class="home">
+        <h1 class="home-title">{{homeTitle}}</h1>
+        <p class="home-text">{{homeParagraph1}}</p>
 
-            Ivor Jüchtern
-
-        </title>
-
-        <link rel="icon" href="{{root}}images/favicon.svg" type="image/svg+xml">
-        <link rel="icon" href="{{root}}images/favicon.png" type="image/png">
-
-        <link rel="stylesheet" href="{{root}}style.css">
-
-        {{alternateLinks}}
-        {{languageRedirect}}
-    </head>
-    <body>
-  <div class="logo index-logo">
-    <span class="logo">
-      <a class="logo" href="index.html" aria-label="Ivor J&uuml;chtern">Ij</a>
-    </span>
-  </div>
-  {{languageSwitch}}
-        <div class="bg-image">
-            
-            <div class="overlay"></div>
-            
-            <div class="bg-title">{{text.heroTitle}}<br>
-                                
-                                <span class="divider"></span>
-                                <br>
-                                {{text.heroSubtitle}}
+        <div class="home-article">
+            <img class="home-image" src="{{homeImage}}" alt="{{homeTitle}}">
+            <div>
+                <p class="home-text">{{homeParagraph2}}</p>
+                <p class="home-text">{{homeParagraph3}}</p>
+                <p class="home-text">{{homeParagraph4}}</p>
             </div>
-
-            <div class="small-title">
-
-                {{text.heroSmall}}
-
-            </div>
-       
-        </div>
-
-        <div class="container">
-
-            <div class="smaller">
-
-            </div>
-
-            <div class="bigger">
-
-                <!-- Protecting the paragraphs from the flex.
-                -->
-                <div>
-
-                    <p class="container-title">{{homeTitle}}</p>
-
-                    <p class="container-text">{{homeParagraph1}}</p>
-
-                </div>
-
-            </div>
-            
-        </div>
-
-        <div class="container">
-
-            <div class="smaller">
-
-                <!-- div class="triangle"></div -->
-
-            </div>
-
-            <div class="bigger">
-
-                <img class="container-image" src="{{homeImage}}">
-
-                <!-- Protecting the paragraphs from the flex.
-                -->
-                <div>
-
-                    <p class="container-text">{{homeParagraph2}}</p>
-                    
-                    <p class="container-text">{{homeParagraph3}}</p>
-
-                    <p class="container-text">{{homeParagraph4}}</p>
-
-                </div>
-
-            </div>
-            
         </div>
 
         <!-- Reference: case study by Phoenix Contact (texts in templates/texts/*.json) -->
@@ -113,16 +50,11 @@
             <a class="reference-button" href="https://www.plcnext-community.net/news/industrial-energy-management-ivor-juechtern/" hreflang="en">{{text.referenceButton}}</a>
         </section>
 
-        <div class="container">
-            <div class="smaller"></div>
-            <div class="bigger">
-                <div class="toc-container">
-                    {{categories}}
-                </div>
-            </div>
+        <div class="toc">
+            {{categories}}
         </div>
+    </main>
 
-        {{footer}}
-
-    </body>
+    {{footer}}
+</body>
 </html>
