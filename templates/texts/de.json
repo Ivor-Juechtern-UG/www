@@ -10,5 +10,12 @@
   "registerCourt": "Registergericht: Amtsgericht Darmstadt, HRB 107372",
   "vatId": "Umsatzsteuer-Identifikationsnummer DE452433967",
   "familyBusiness": "Ivor Jüchtern ist ein inhabergeführtes Familienunternehmen in der dritten Generation.",
-  "privacyPolicy": "Datenschutzerklärung"
+  "privacyPolicy": "Datenschutzerklärung",
+  "referenceLabel": "Referenz · De Hoop Pekso · Oliva Energy · Phoenix Contact",
+  "referenceTitle": "Solarstrom statt Gas im Betonwerk",
+  "referencePhotovoltaics": "Photovoltaik",
+  "referenceHeating": "elektrische Heizung",
+  "referenceCycle": "Regelzyklus",
+  "referenceText": "Wir haben für Oliva Energy ein Energiemanagement auf PLCnext Control entwickelt, das bei De Hoop Pekso Solarstrom als Gasersatz steuert.",
+  "referenceButton": "Zur Fallstudie"
 }

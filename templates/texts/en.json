@@ -10,5 +10,12 @@
   "registerCourt": "Register court: Amtsgericht Darmstadt, HRB 107372",
   "vatId": "VAT identification number DE452433967",
   "familyBusiness": "Ivor Jüchtern is an owner-managed family business in its third generation.",
-  "privacyPolicy": "Privacy policy"
+  "privacyPolicy": "Privacy policy",
+  "referenceLabel": "Reference · De Hoop Pekso · Oliva Energy · Phoenix Contact",
+  "referenceTitle": "Solar power instead of gas in a precast concrete plant",
+  "referencePhotovoltaics": "Photovoltaics",
+  "referenceHeating": "Electric heating",
+  "referenceCycle": "Control cycle",
+  "referenceText": "We developed an energy management system for Oliva Energy on PLCnext Control that steers solar power at De Hoop Pekso as a replacement for gas.",
+  "referenceButton": "Read the case study"
 }

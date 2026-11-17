@@ -95,6 +95,24 @@
             
         </div>
 
+        <!-- Reference: case study by Phoenix Contact (texts in templates/texts/*.json) -->
+        <section class="reference">
+            <p class="reference-label">{{text.referenceLabel}}</p>
+            <h2 class="reference-title">{{text.referenceTitle}}</h2>
+            <div class="reference-figures">
+                <div><span class="reference-number">640 kWp</span><span class="reference-unit">{{text.referencePhotovoltaics}}</span></div>
+                <div><span class="reference-number">720 kW</span><span class="reference-unit">{{text.referenceHeating}}</span></div>
+                <div><span class="reference-number">100 ms</span><span class="reference-unit">{{text.referenceCycle}}</span></div>
+            </div>
+            <p class="reference-text">{{text.referenceText}}</p>
+            <div class="reference-logos">
+                <img class="reference-logo-square" src="{{root}}images/references/de-hoop-pekso.svg" alt="De Hoop Pekso">
+                <img src="{{root}}images/references/oliva-energy.svg" alt="Oliva Energy">
+                <img src="{{root}}images/references/phoenix-contact.png" alt="Phoenix Contact">
+            </div>
+            <a class="reference-button" href="https://www.plcnext-community.net/news/industrial-energy-management-ivor-juechtern/" hreflang="en">{{text.referenceButton}}</a>
+        </section>
+
         <div class="container">
             <div class="smaller"></div>
             <div class="bigger">
