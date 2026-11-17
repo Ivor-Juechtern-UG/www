@@ -414,9 +414,12 @@ h1.article-title
     color: #666666;
 }
 
-/* Explanation below the title photo and caption below photos in the text */
+/* Explanation below the title photo and caption below photos in the text:
+   smaller than the article text */
 .article-page article p.article-explanation
 {
+    font-size: 1.05rem;
+    line-height: 1.45;
     color: #444444;
     text-align: center;
     margin: -1.5rem auto 2.5rem;
