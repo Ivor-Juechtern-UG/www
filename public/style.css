@@ -254,14 +254,15 @@ a.logo {
     display: inline-block;
 }
 
-/* The name sits on a solid black box with white text in Times New Roman
-   (a system font, nothing is downloaded), on every page. */
+/* The logo "Ij" sits on a solid black box with white text in Poiret One,
+   the font of the language buttons (served from fonts/, see below), on every page. */
 a.logo,
 a.logo:hover,
 a.logo:active,
 a.logo:visited,
 a.logo:visited:hover {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Poiret One", "Times New Roman", serif;
+    font-weight: 400;
     text-decoration: none;
     background-color: #000000;
     color: #ffffff;
