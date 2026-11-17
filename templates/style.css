@@ -560,3 +560,146 @@ nav.language-switch a:focus
     width: auto;
     max-height: 70vh;
 }
+
+/* Reference on the home page (case study), between the home article and the
+   table of contents: key figures between two thin lines. */
+section.reference
+{
+    margin: 3rem 1.5rem 1rem calc(150px + 1.5rem);
+    padding: 2.2rem 0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    max-width: 60rem;
+}
+
+.reference-label
+{
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 0.6rem;
+}
+
+h2.reference-title
+{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+}
+
+.reference-figures
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1.4rem;
+}
+
+.reference-figures div
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 2rem 0.2rem 0;
+    margin-right: 2rem;
+    border-right: 1px solid #000000;
+}
+
+.reference-figures div:last-child
+{
+    border-right: none;
+}
+
+.reference-number
+{
+    font-family: "Poiret One", sans-serif;
+    font-size: 2.6rem;
+    line-height: 1.1;
+}
+
+.reference-unit
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.reference-text
+{
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.7rem;
+    margin: 0 0 1.4rem;
+    max-width: 46rem;
+}
+
+a.reference-button,
+a.reference-button:visited,
+a.reference-button:hover,
+a.reference-button:active
+{
+    display: inline-block;
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.2rem;
+    padding: 0.45em 0.9em 0.4em;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Phones: figures one below the other, without dividers */
+@media (max-width: 768px)
+{
+    section.reference
+    {
+        margin: 2rem 1rem 1rem;
+    }
+
+    .reference-figures
+    {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .reference-figures div
+    {
+        border-right: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .reference-number
+    {
+        font-size: 2.2rem;
+    }
+}
+
+/* Logos of the companies involved, all black and the same height */
+.reference-logos
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.2rem 2.5rem;
+    margin: 0 0 1.6rem;
+}
+
+.reference-logos img,
+.article-page .reference-logos img
+{
+    display: block;
+    height: 3rem;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Square logos need more height to look as big as wide ones */
+.reference-logos img.reference-logo-square
+{
+    height: 5rem;
+}
