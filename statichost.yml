@@ -1,0 +1,6 @@
+# Build configuration for statichost.eu (https://www.statichost.eu/docs/build-config/).
+# On every deploy the site is built from content/ and templates/ with
+# generator.js (pinned in package-lock.json); the result in public/ is published.
+image: node:22
+command: npm ci && npm run build
+public: public
