@@ -336,10 +336,60 @@ a.reference-button:hover
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Article links in the table of contents */
-.toc a
+/*
+ * Home page: table of contents, one block per section in the style of the
+ * reference above it: heading, introduction, then the articles as a list
+ * between thin lines
+ */
+
+.toc section
 {
-    font-size: 1.8rem;
+    margin: 4.5rem 0 6rem;
+}
+
+.toc h2
+{
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+}
+
+p.section-text
+{
+    font-size: 1.35rem;
+    line-height: 1.7rem;
+    margin: 0 0 2rem;
+    max-width: 46rem;
+}
+
+.toc p:not(.section-text)
+{
+    margin: 0;
+    border-top: 1px solid #cccccc;
+}
+
+.toc p:not(.section-text):last-child
+{
+    border-bottom: 1px solid #cccccc;
+}
+
+/* The whole row is the link; an arrow in Poiret One at the end */
+.toc p:not(.section-text) a
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1.1rem 0 0.9rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.toc p:not(.section-text) a::after
+{
+    content: "\2192";
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.6rem;
 }
 
 /*
@@ -573,5 +623,15 @@ h2.footer-title
     .reference-number
     {
         font-size: 2.2rem;
+    }
+
+    .toc section
+    {
+        margin: 3rem 0 4rem;
+    }
+
+    .toc p:not(.section-text) a
+    {
+        font-size: 1.25rem;
     }
 }
