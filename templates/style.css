@@ -61,16 +61,13 @@ body
     font-family: "League Spartan", sans-serif;
 }
 
-/* Links take the colour of the text around them, also when visited */
+/* Links take the colour of the text around them, also when visited, and
+   do not change when pointed at, pressed or tapped */
 a
 {
     color: inherit;
     text-decoration: none;
-}
-
-a:hover
-{
-    background-color: gold;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Titles of the home page and of the articles */
@@ -119,8 +116,7 @@ a.logo
 
 /*
  * Language switch: "Deutsch" and "English" as two touching buttons, top
- * right. The current language is white on black, the other black on white;
- * neither changes colour when pointed at, pressed or tapped.
+ * right. The current language is white on black, the other black on white.
  */
 
 nav.language-switch
@@ -142,7 +138,6 @@ nav.language-switch span
     border: 1px solid #000000;
     background-color: #ffffff;
     color: #000000;
-    -webkit-tap-highlight-color: transparent;
 }
 
 nav.language-switch span[aria-current]
@@ -344,7 +339,6 @@ a.reference-button
     background-color: #000000;
     color: #ffffff;
     border: 1px solid #000000;
-    -webkit-tap-highlight-color: transparent;
 }
 
 /*
@@ -502,11 +496,6 @@ h2.footer-title
 .footer p:last-child
 {
     margin-bottom: 0;
-}
-
-.footer a:hover
-{
-    color: #000000;
 }
 
 /*
