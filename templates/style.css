@@ -461,8 +461,8 @@ img.article-inline-image
     max-height: 70vh;
 }
 
-/* Caption below photos in the text, smaller than the text and centred
-   like the photo */
+/* Caption below the title photo and the photos in the text: smaller than
+   the text and centred */
 p.article-explanation
 {
     font-size: 1.05rem;
@@ -471,14 +471,6 @@ p.article-explanation
     text-align: center;
     margin: -1.5rem 0 2.5rem;
     padding: 0 1rem;
-}
-
-/* Explanation below the title photo, aligned with the title */
-img.article-hero + p.article-explanation
-{
-    text-align: left;
-    margin-top: -1.25rem;
-    padding: 0;
 }
 
 /*
