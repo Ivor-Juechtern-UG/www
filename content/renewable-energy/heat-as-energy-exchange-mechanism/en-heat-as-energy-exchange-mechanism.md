@@ -2,7 +2,7 @@
 title: Heat as Energy Exchange Mechanism
 authors: 
 image: images/Sand-Battery-2MW-PNE.jpeg
-explanation: A 2MW Sand Battery. Image courtes of Polar Night Energy.
+explanation: A 2 MW Sand Battery. Image courtesy of Polar Night Energy.
 ---
 
 # What kind of Article is this?
