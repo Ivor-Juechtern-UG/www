@@ -3,7 +3,7 @@ title: Death by Quality
 draft: true
 authors: 
 image: images/mutation-tests.png
-explanation: A mutation test run on seven cores at once; the number in brackets is the core. Each line is one mutant, a small change planted in the code, such as &laquo; &lt; &raquo; turned into &laquo; &lt;= &raquo;, with its number among the mutants of its file. &laquo; Killed &raquo;: a test noticed the change. &laquo; Survived &raquo;: no test did. &laquo; No code change &raquo;: the mutant is the same program as the original.
+explanation: A mutation test run on seven cores at once; the number in brackets is the core. Each line is one mutant, a small change planted in the code, such as &laquo; &lt; &raquo; turned into &laquo; &lt;= &raquo;, with its number among the mutants of its file. &laquo; Killed &raquo;: a test noticed the change. &laquo; Survived &raquo;: no test did.
 ---
 
 In 1971, Richard Lipton invented mutation tests.
@@ -22,9 +22,9 @@ This article is written for developers who now let droids write their tests, and
 
 The method speaks the language of life and death. A mutant is born from one small change: &laquo; &lt; &raquo; becomes &laquo; &lt;= &raquo;, &laquo; true &raquo; becomes &laquo; false &raquo;, a 1 becomes a 2. The tests run. Either they notice, and the mutant is __killed__, or nobody notices, and it __survives__.
 
-Some mutants can never die. &laquo; No code change &raquo; means the change made the same program: there is nothing for a test to notice. They are called equivalent mutants. They are immortal, and they cost as much time as the others.
+Some mutants can never die. The run marks them &laquo; no code change &raquo;: the change made the same program, and there is nothing for a test to notice. They are called equivalent mutants. They are immortal, and they cost as much time as the others.
 
-Each survivor is a question. In the image: line 68, &laquo; true &raquo; turned into &laquo; false &raquo;, survived. Somewhere a condition can be the opposite of itself, and no test minds.
+Each survivor is a question. In the image: line 52, &laquo; &lt; &raquo; turned into &laquo; &lt;= &raquo;, survived. Somewhere a limit can sit one step further out, and no test minds.
 
 # Ahead of Its Time
 

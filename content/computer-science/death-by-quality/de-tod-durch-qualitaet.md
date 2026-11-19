@@ -3,7 +3,7 @@ title: Tod durch Qualität
 draft: true
 authors: 
 image: images/mutation-tests.png
-explanation: Ein Lauf von Mutationstests auf sieben Kernen gleichzeitig; die Zahl in Klammern ist der Kern. Jede Zeile ist ein Mutant, eine kleine Änderung im Code, etwa &laquo; &lt; &raquo; zu &laquo; &lt;= &raquo;, mit seiner Nummer unter den Mutanten seiner Datei. &laquo; Killed &raquo;: ein Test hat die Änderung bemerkt. &laquo; Survived &raquo;: kein Test. &laquo; No code change &raquo;: der Mutant ist dasselbe Programm wie das Original.
+explanation: Ein Lauf von Mutationstests auf sieben Kernen gleichzeitig; die Zahl in Klammern ist der Kern. Jede Zeile ist ein Mutant, eine kleine Änderung im Code, etwa &laquo; &lt; &raquo; zu &laquo; &lt;= &raquo;, mit seiner Nummer unter den Mutanten seiner Datei. &laquo; Killed &raquo;: ein Test hat die Änderung bemerkt. &laquo; Survived &raquo;: kein Test.
 ---
 
 1971 erfand Richard Lipton die Mutationstests.
@@ -22,9 +22,9 @@ Dieser Artikel richtet sich an Entwickler, die ihre Tests inzwischen von Droiden
 
 Die Methode spricht die Sprache von Leben und Tod. Ein Mutant entsteht aus einer kleinen Änderung: aus &laquo; &lt; &raquo; wird &laquo; &lt;= &raquo;, aus &laquo; true &raquo; wird &laquo; false &raquo;, aus einer 1 eine 2. Die Tests laufen. Entweder sie bemerken es, dann wird der Mutant __getötet__, oder niemand bemerkt es, dann __überlebt__ er.
 
-Manche Mutanten können nie sterben. &laquo; No code change &raquo; heißt: Die Änderung ergibt dasselbe Programm, es gibt nichts, was ein Test bemerken könnte. Man nennt sie äquivalente Mutanten. Sie sind unsterblich und kosten so viel Zeit wie die anderen.
+Manche Mutanten können nie sterben. Der Lauf markiert sie mit &laquo; no code change &raquo;: Die Änderung ergibt dasselbe Programm, und es gibt nichts, was ein Test bemerken könnte. Man nennt sie äquivalente Mutanten. Sie sind unsterblich und kosten so viel Zeit wie die anderen.
 
-Jeder Überlebende ist eine Frage. Im Bild: Zeile 68, aus &laquo; true &raquo; wurde &laquo; false &raquo;, überlebt. Irgendwo kann eine Bedingung ihr eigenes Gegenteil sein, und kein Test stört sich daran.
+Jeder Überlebende ist eine Frage. Im Bild: Zeile 52, aus &laquo; &lt; &raquo; wurde &laquo; &lt;= &raquo;, überlebt. Irgendwo kann eine Grenze einen Schritt weiter außen liegen, und kein Test stört sich daran.
 
 # Ihrer Zeit voraus
 
