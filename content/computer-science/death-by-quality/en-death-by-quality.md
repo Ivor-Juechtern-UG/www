@@ -2,8 +2,10 @@
 title: Death by Quality
 authors: 
 image: images/mutation-tests.png
-explanation: A mutation test run on seven cores at once; the number in brackets is the core. Each line is one mutant, a small change planted in the code, such as &laquo; &lt; &raquo; turned into &laquo; &lt;= &raquo;, with its number among the mutants of its file. &laquo; Killed &raquo;: a test noticed the change. &laquo; Survived &raquo;: no test did.
+explanation: "A mutation test run on seven cores at once; the number in brackets is the core. Each line is one mutant, a small change planted in the code, such as &laquo; &lt; &raquo; turned into &laquo; &lt;= &raquo;, with its number among the mutants of its file. &laquo; Killed &raquo;: a test noticed the change. &laquo; Survived &raquo;: no test did."
 ---
+
+persig wuality
 
 In 1971, Richard Lipton invented mutation tests.
 
