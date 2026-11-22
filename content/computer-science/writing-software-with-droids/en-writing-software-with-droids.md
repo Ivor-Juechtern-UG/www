@@ -5,6 +5,8 @@ authors:
 explanation: A long read, researched in depth, between an article and a book.
 ---
 
+LLMS ARE LED BY CONTEXT THE ROLE OF THE HUMAN IS TO SPECIFY IT, CHECL THE WORK AND BE A CONSTANT GUARDIAN OF THE CONTEXT, WHICH LEADS TO VALUE LINK TO VALUE ARTICLE
+
 ChatGPT made large language models available to the general public in late 2022.
 
 By late 2025, LLMs had become capable of contributing to software projects at the architectural level. Earlier that year, in February, Andrej Karpathy had coined the term "vibe coding."
