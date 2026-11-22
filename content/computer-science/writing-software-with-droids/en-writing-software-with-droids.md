@@ -7,6 +7,16 @@ explanation: A long read, researched in depth, between an article and a book.
 
 LLMS ARE LED BY CONTEXT THE ROLE OF THE HUMAN IS TO SPECIFY IT, CHECL THE WORK AND BE A CONSTANT GUARDIAN OF THE CONTEXT, WHICH LEADS TO VALUE LINK TO VALUE ARTICLE
 
+## The Mission and the Place
+
+A large language model is led by the mission the large language model is given, and also by the place where the large language model is sent to work: the code, the texts and the habits the large language model finds there. When the culture of the place differs from the mission, the large language model gets carried away. The large language model starts to replicate the place, instead of improving the place.
+
+A good place strengthens the mission. A place that follows the rules of the mission shows the large language model, line by line, what the rules mean. A place that breaks the rules teaches the large language model to break the rules too, however clearly the rules are written.
+
+So a large language model sent into a jungle should start in a clear session, with a small context and the rules fresh. And the first task should be clear: fix the jungle, before writing anything new. Once the jungle is tidy, the place itself teaches the rules, and every new line follows them.
+
+Tidy first! Kent Beck asked the question in the title of a book (Kent Beck, "Tidy First? A Personal Exercise in Empirical Software Design", O'Reilly, 2023). With droids, the answer is yes.
+
 ChatGPT made large language models available to the general public in late 2022.
 
 By late 2025, LLMs had become capable of contributing to software projects at the architectural level. Earlier that year, in February, Andrej Karpathy had coined the term "vibe coding."
