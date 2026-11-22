@@ -1,6 +1,5 @@
 ---
 title: Tod durch Qualität
-draft: true
 authors: 
 image: images/mutation-tests.png
 explanation: Ein Lauf von Mutationstests auf sieben Kernen gleichzeitig; die Zahl in Klammern ist der Kern. Jede Zeile ist ein Mutant, eine kleine Änderung im Code, etwa &laquo; &lt; &raquo; zu &laquo; &lt;= &raquo;, mit seiner Nummer unter den Mutanten seiner Datei. &laquo; Killed &raquo;: ein Test hat die Änderung bemerkt. &laquo; Survived &raquo;: kein Test.
